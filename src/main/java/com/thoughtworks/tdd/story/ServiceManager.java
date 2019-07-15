@@ -18,7 +18,6 @@ public class ServiceManager extends ParkingBoy{
 
     public void addParkingBoyToList(ParkingBoy parkingBoy) {
         parkingBoysList.add(parkingBoy);
-
     }
 
     public Ticket parkCarByNthBoy(int i, Car car) {
