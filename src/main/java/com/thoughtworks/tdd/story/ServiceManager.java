@@ -5,9 +5,10 @@ import java.util.List;
 
 public class ServiceManager extends ParkingBoy{
     private List<ParkingBoy> parkingBoysList = new ArrayList<>();
+    private int initParkingBoysCount = 3;
 
     public ServiceManager(){
-        for(int i = 0; i < 3; i++)
+        for(int i = 0; i < initParkingBoysCount; i++)
             parkingBoysList.add(new ParkingBoy());
     }
 
