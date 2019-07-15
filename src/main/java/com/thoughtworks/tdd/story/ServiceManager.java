@@ -20,15 +20,15 @@ public class ServiceManager extends ParkingBoy{
         parkingBoysList.add(parkingBoy);
     }
 
-    public Ticket parkCarByNthBoy(int i, Car car) {
-        return parkingBoysList.get(i-1).park(car);
+    public Ticket parkCarByNthBoy(int indexOfParkingBoysList, Car car) {
+        return parkingBoysList.get(indexOfParkingBoysList-1).park(car);
     }
 
-    public String displayErrorMessageByNthBoy(int i) {
-        return parkingBoysList.get(i-1).query();
+    public String displayErrorMessageByNthBoy(int indexOfParkingBoysList) {
+        return parkingBoysList.get(indexOfParkingBoysList-1).query();
     }
 
-    public Car fetchCarByNthBoy(int i, Ticket ticket) {
-        return parkingBoysList.get(i-1).fetch(ticket);
+    public Car fetchCarByNthBoy(int indexOfParkingBoysList, Ticket ticket) {
+        return parkingBoysList.get(indexOfParkingBoysList-1).fetch(ticket);
     }
 }
