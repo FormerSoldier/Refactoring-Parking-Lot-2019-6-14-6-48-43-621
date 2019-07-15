@@ -16,8 +16,8 @@ public class Story5Test {
         superSmartParkingBoy.park(new Car());
         superSmartParkingBoy.park(new Car());
 
-        Assertions.assertEquals(((SuperSmartParkingBoy)superSmartParkingBoy).getLotAvailableParkingCountByNum(1),9);
-        Assertions.assertEquals(((SuperSmartParkingBoy)superSmartParkingBoy).getLotAvailableParkingCountByNum(2),18);
+        Assertions.assertEquals(((SuperSmartParkingBoy)superSmartParkingBoy).getLotAvailableParkingCountByIndex(1),9);
+        Assertions.assertEquals(((SuperSmartParkingBoy)superSmartParkingBoy).getLotAvailableParkingCountByIndex(2),18);
 
     }
 }

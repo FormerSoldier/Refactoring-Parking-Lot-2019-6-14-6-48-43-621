@@ -1,11 +1,13 @@
 package com.thoughtworks.tdd.story;
 
 public class SmartParkingBoy extends ParkingBoy{
-    
-    public int getLotAvailableParkingCountByNum(int indexOfParkingLotList) {
-        if(indexOfParkingLotList == 1)
+    private int firstParkingLotIndex = 1;
+    private int secondParkingLotIndex = 2;
+
+    public int getLotAvailableParkingCountByIndex(int indexOfParkingLotList) {
+        if(indexOfParkingLotList == firstParkingLotIndex)
             return getFirstParkingLot().getAvailableParkingCount();
-        else if(indexOfParkingLotList == 2)
+        else if(indexOfParkingLotList == secondParkingLotIndex)
             return getSecondParkingLot().getAvailableParkingCount();
         return 0;
     }
