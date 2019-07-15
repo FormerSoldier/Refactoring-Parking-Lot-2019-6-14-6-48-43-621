@@ -45,7 +45,6 @@ public class ParkingLot {
         return totalParkingCount == parkingInfo.size();
     }
 
-    //get the available parking count from parkingLot
     public int getAvailableParkingCount(){
         return totalParkingCount - parkingInfo.size();
     }
